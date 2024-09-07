@@ -32,8 +32,8 @@ var name = document.forms['myForm']["fname"].value;
   }
 
   var password = document.forms['myForm']["fpassword"].value;
-  if (password.length < 8) {
-    seterror("password", "Password must be at least 8 characters");
+  if (password.length !== 10) {
+    seterror("password", "Password must be at least 10 characters");
     returnval = false;
   }
   else {
