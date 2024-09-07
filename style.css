@@ -1,0 +1,74 @@
+ /* Ensures the body and html take up the full height */
+ html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #7a13e8 0%, #3470d7 50%, #12b6e4 100%);
+
+
+}
+
+/* Form container styling */
+.form-designed {
+  margin-bottom: 15px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid transparent ;
+  background-image: linear-gradient(135deg, #8215f7 0%, #fc9b25 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 3px; /* Make the gradient act as the border */
+  background-position: bottom; /* Position it at the bottom */
+  transition: background-size 0.3s ease, color 0.3s ease; 
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+  background-size: 100% 5px; /* Expand the gradient */
+  color: #fc9b25; /* Optional: Change text color on focus */
+  outline: none; /* Remove default outline */
+}
+.form-error {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Centering the form container */
+form {
+  /* background: white; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Form width */
+  background: transparent;
+  color: white;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+} 
